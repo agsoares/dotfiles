@@ -1,6 +1,3 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/adriano/.oh-my-zsh
-
 DEFAULT_USER="agsoares"
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -46,19 +43,16 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, osx, brew)
+plugins=(git brew osx)
 
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+export GOPATH=$HOME/Projects/GO
+export PATH=/usr/local/bin:$PATH:$GOPATH/bin
 
 source $ZSH/oh-my-zsh.sh
 # User configuration
-
-export GOPATH=$HOME/Projects/GO
-
-export PATH=$PATH:$GOPATH/bin
-export PATH=/usr/local/bin:$PATH:$GOPATH/bin
-export PATH=$HOME/.yarn/bin:$PATH
-
-# export MANPATH="/usr/local/man:$MANPATH"
 
 
 # Example aliases
@@ -79,3 +73,6 @@ eval "$(pyenv virtualenv-init -)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 fortune | cowsay | lolcat
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
