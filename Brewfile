@@ -2,7 +2,10 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
-brew 'node'
+brew 'readline'
+brew 'nvm'
+brew 'pyenv'
+brew 'rbenv'
 brew 'cowsay'
 brew 'fortune'
 brew 'carthage'
