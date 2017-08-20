@@ -25,6 +25,8 @@ cask 'fastlane'
 cask 'spotify'
 cask 'slack'
 cask 'sip'
+cask 'docker'
+
 
 tap 'caskroom/fonts'
 cask 'font-fira-mono'
