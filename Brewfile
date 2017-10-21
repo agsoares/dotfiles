@@ -15,6 +15,7 @@ brew 'cowsay'
 brew 'fortune'
 brew 'lolcat'
 brew 'carthage'
+brew 'kubectl'
 brew 'Nonchalant/appicon/appicon'
 
 cask 'atom'
