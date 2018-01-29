@@ -17,7 +17,7 @@ brew 'lolcat'
 brew 'carthage'
 
 tap 'caskroom/cask'
-cask 'atom'
+cask 'visual-studio-code'
 cask 'opera'
 cask 'iterm2'
 cask 'fastlane'
