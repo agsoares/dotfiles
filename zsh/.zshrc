@@ -15,6 +15,7 @@ antigen bundle kennethreitz/autoenv
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-completions src
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle paulirish/git-open
 
 antigen bundle mafredri/zsh-async
 antigen theme DFurnes/purer
