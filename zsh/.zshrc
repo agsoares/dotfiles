@@ -25,17 +25,6 @@ antigen apply
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
-function random_word() {
-    perl -e 'open IN, "</usr/share/dict/words";rand($.) < 1 && ($n=$_) while <IN>;print $n'
-}
-
-function mailinator() {
-    W1=$(random_word)
-    W2=$(random_word)
-    echo $W1$W2'@mailinator.com' | pbcopy
-    open 'http://www.mailinator.com/v2/inbox.jsp?zone=public&query='$W1$W2 -a /Applications/Opera.app
-}
-
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
