@@ -14,6 +14,7 @@ brew 'rbenv'
 brew 'cowsay'
 brew 'fortune'
 brew 'lolcat'
+brew 'mas'
 brew 'carthage'
 
 tap 'caskroom/cask'
@@ -32,3 +33,6 @@ cask 'font-fira-mono-for-powerline'
 cask 'font-fira-code'
 cask 'font-monofur'
 cask 'font-hack'
+
+mas 'Affinity Designer', id: 824171161
+mas 'XCode', id: 497799835
