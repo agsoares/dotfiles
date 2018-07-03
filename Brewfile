@@ -24,6 +24,7 @@ cask 'iterm2'
 cask 'spotify'
 cask 'dropbox'
 cask '1password'
+cask 'insomnia'
 cask 'docker'
 cask 'keepingyouawake'
 
