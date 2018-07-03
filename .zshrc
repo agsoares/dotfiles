@@ -23,6 +23,9 @@ antigen theme DFurnes/purer
 # Tell antigen that you're done.
 antigen apply
 
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
