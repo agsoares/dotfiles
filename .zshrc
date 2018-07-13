@@ -4,10 +4,14 @@ source /usr/local/share/antigen/antigen.zsh
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
+# Bundles configuration
+BUNDLED_COMMANDS=(pod fastlane)
+
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 antigen bundle brew
 antigen bundle osx
+antigen bundle bundler
 
 # Third Party
 antigen bundle kennethreitz/autoenv
@@ -35,7 +39,10 @@ if which pyenv > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"  # This loads nvm
+[ -f "$(brew --prefix)/etc/profile.d/z.sh" ] && source "$(brew --prefix)/etc/profile.d/z.sh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+source ~/.dotfiles/.aliases
 
 fortune | cowsay | lolcat
