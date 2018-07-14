@@ -23,7 +23,6 @@ antigen bundle zsh-users/zsh-completions src
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle paulirish/git-open
 
-antigen bundle mafredri/zsh-async
 antigen theme eendroroy/alien-minimal alien-minimal
 
 # Tell antigen that you're done.
