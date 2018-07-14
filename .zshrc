@@ -6,6 +6,8 @@ antigen use oh-my-zsh
 
 # Bundles configuration
 BUNDLED_COMMANDS=(pod fastlane)
+PROMPT_END_TAG=' ❯'
+AM_THEME=soft
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
@@ -22,7 +24,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle paulirish/git-open
 
 antigen bundle mafredri/zsh-async
-antigen theme DFurnes/purer
+antigen theme eendroroy/alien-minimal alien-minimal
 
 # Tell antigen that you're done.
 antigen apply
