@@ -6,7 +6,7 @@ antigen use oh-my-zsh
 
 # Bundles configuration
 BUNDLED_COMMANDS=(pod fastlane)
-PROMPT_END_TAG=' ❯'
+PROMPT_END_TAG=' ❯❯❯'
 AM_INITIAL_LINE_FEED=2
 AM_THEME=soft
 AM_HIDE_EXIT_CODE=1
@@ -32,6 +32,8 @@ antigen apply
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+bindkey "[D" backward-word
+bindkey "[C" forward-word
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
