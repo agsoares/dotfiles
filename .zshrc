@@ -7,7 +7,9 @@ antigen use oh-my-zsh
 # Bundles configuration
 BUNDLED_COMMANDS=(pod fastlane)
 PROMPT_END_TAG=' ❯'
+AM_INITIAL_LINE_FEED=2
 AM_THEME=soft
+AM_HIDE_EXIT_CODE=1
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git

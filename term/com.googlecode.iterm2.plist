@@ -32044,10 +32044,12 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>1169 110 445 103 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>599 275 918 512 0 0 1680 1028 </string>
+	<string>599 393 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>200 59 990 927 0 0 1680 1028 </string>
+	<string>194 55 990 955 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13_selection</key>
@@ -32339,7 +32341,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.98545745481927705</real>
+			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -32660,7 +32662,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>FuraCodeNerdFontComplete-Retina 11</string>
+			<string>FuraCodeNerdFontComplete-Retina 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -32838,7 +32840,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.0064064853162651</real>
+			<real>1.01904296875</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
