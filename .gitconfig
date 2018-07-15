@@ -3,7 +3,7 @@
 	email = gsoares.adriano@gmail.com
 	username = agsoares
 [core]
-	excludesfile = /Users/adriano/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [gitflow "prefix"]
 	feature = feature/
 	release = release/
