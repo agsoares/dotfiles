@@ -26,7 +26,6 @@ cask 'spotify'
 cask 'dropbox'
 cask '1password'
 cask 'insomnia'
-cask 'clipy'
 cask 'docker'
 cask 'keepingyouawake'
 
@@ -40,3 +39,4 @@ cask 'font-hack'
 
 mas 'Affinity Designer', id: 824171161
 mas 'XCode', id: 497799835
+mas 'Magnet', id: 441258766
