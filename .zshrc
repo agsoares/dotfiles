@@ -35,6 +35,8 @@ bindkey "^[[B" history-beginning-search-forward
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 
+DISABLE_AUTO_TITLE="true"
+
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 if which brew  > /dev/null; then export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH; fi
@@ -49,5 +51,7 @@ export NVM_DIR="$HOME/.nvm"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source ~/.dotfiles/.aliases
+
+TEXMFHOME=~/texmf
 
 fortune | cowsay | lolcat
