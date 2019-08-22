@@ -6,7 +6,7 @@ antigen use oh-my-zsh
 
 # Bundles configuration
 BUNDLED_COMMANDS=(pod fastlane)
-PROMPT_END_TAG=' ❯❯❯'
+AM_PROMPT_END_TAG=' ❯❯❯'
 AM_INITIAL_LINE_FEED=2
 AM_THEME=soft
 AM_HIDE_EXIT_CODE=1
@@ -24,6 +24,7 @@ antigen bundle kennethreitz/autoenv
 antigen bundle zsh-users/zsh-completions src
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle paulirish/git-open
+antigen bundle MichaelAquilina/zsh-you-should-use
 
 antigen theme eendroroy/alien-minimal alien-minimal
 
@@ -36,6 +37,9 @@ bindkey "[D" backward-word
 bindkey "[C" forward-word
 
 DISABLE_AUTO_TITLE="true"
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
@@ -51,7 +55,5 @@ export NVM_DIR="$HOME/.nvm"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source ~/.dotfiles/.aliases
-
-TEXMFHOME=~/texmf
 
 fortune | cowsay | lolcat
