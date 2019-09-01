@@ -3,7 +3,12 @@
 	email = gsoares.adriano@gmail.com
 	username = agsoares
 [core]
+    editor = code --wait
 	excludesfile = ~/.gitignore_global
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $
 [gitflow "prefix"]
 	feature = feature/
 	release = release/
