@@ -1,4 +1,3 @@
-
 if [ "$(uname)" == "Darwin" ]; then
     # Install Homebrew
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -7,19 +6,27 @@ if [ "$(uname)" == "Darwin" ]; then
 fi
 
 # Backup old .zshrc and symlink the new one
-if [ -f ~/.zshrc ]; then
+if [ -e ~/.zshrc ]; then
     mv ~/.zshrc ~/.zshrc.bkp-$(date +%m.%d.%y.%s)
 fi
-ln -s .zshrc ~/.zshrc
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 # Backup old .gitconfig and symlink the new one
-if [ -f ~/.gitconfig ]; then
+if [ -e ~/.gitconfig ]; then
     mv ~/.gitconfig ~/.gitconfig.bkp-$(date +%m.%d.%y.%s)
 fi
-ln -s .gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Backup old .gitignore_global and symlink the new one
-if [ -f ~/.gitignore_global ]; then
+if [ -e ~/.gitignore_global ]; then
     mv ~/.gitignore_global ~/.gitignore_global.bkp-$(date +%m.%d.%y.%s)
 fi
-ln -s .gitignore_global ~/.gitignore_global
+ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global
+
+ZSH=$(which zsh)
+if ! grep -q $ZSH /etc/shells; then
+  #Add zsh to your shells
+  sudo echo $ZSH >> /etc/shells
+fi
+#Make zsh the default shell
+chsh -s $ZSH
