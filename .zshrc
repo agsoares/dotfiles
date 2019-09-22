@@ -1,35 +1,13 @@
-# .zshrc Source Basic
-source /usr/local/share/antigen/antigen.zsh
-
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
 # Bundles configuration
 BUNDLED_COMMANDS=(pod fastlane)
-AM_PROMPT_END_TAG=' ❯❯❯'
-AM_INITIAL_LINE_FEED=2
-AM_THEME=soft
+AM_PROMPT_END_TAG=' %F{red}❯%F{yellow}❯%F{green}❯%f'
+AM_INITIAL_LINE_FEED=1
+AM_THEME=default
 AM_HIDE_EXIT_CODE=1
 
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-antigen bundle brew
-antigen bundle osx
-antigen bundle bundler
-
-# Third Party
-antigen bundle kennethreitz/autoenv
-
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-completions src
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle paulirish/git-open
-antigen bundle MichaelAquilina/zsh-you-should-use
-
-antigen theme eendroroy/alien-minimal alien-minimal
-
-# Tell antigen that you're done.
-antigen apply
+# .zshrc Source Basic
+source /usr/local/share/antigen/antigen.zsh
+antigen init ~/.antigenrc
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
@@ -55,5 +33,3 @@ export NVM_DIR="$HOME/.nvm"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 test -e ~/.dotfiles/.aliases && source ~/.dotfiles/.aliases
-
-fortune | cowsay | lolcat

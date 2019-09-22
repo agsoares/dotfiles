@@ -16,6 +16,7 @@ if [ "$(uname)" == "Darwin" ]; then
 fi
 
 symlink_file .zshrc
+symlink_file .antigenrc
 symlink_file .gitconfig
 symlink_file .gitignore_global
 
