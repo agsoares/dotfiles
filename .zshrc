@@ -1,6 +1,6 @@
 # Bundles configuration
 BUNDLED_COMMANDS=(pod fastlane)
-AM_PROMPT_END_TAG=' %F{red}❯%F{yellow}❯%F{green}❯%f'
+AM_PROMPT_END_TAG=' %F{green}❯❯❯%f'
 AM_INITIAL_LINE_FEED=1
 AM_THEME=default
 AM_HIDE_EXIT_CODE=1
