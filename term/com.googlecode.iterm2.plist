@@ -32054,13 +32054,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1169 33 445 77 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 476 620 392 0 0 1680 1027 </string>
+	<string>970 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1381 895 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>846 0 834 1027 0 0 1680 1027 </string>
+	<string>1706 0 850 1417 0 0 2560 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13_selection</key>
@@ -33051,21 +33051,19 @@
 								<key>maxwidth</key>
 								<real>+infinity</real>
 								<key>minwidth</key>
-								<integer>0</integer>
-								<key>path</key>
-								<string>path</string>
+								<real>0.0</real>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.98431372549019602</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.63</real>
+									<real>0.64313725490196083</real>
 									<key>Red Component</key>
-									<real>0.63</real>
+									<real>0.0039215686274509803</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -33099,13 +33097,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.51372549019607838</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.63</real>
+									<real>0.96470588235294119</real>
 									<key>Red Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.31372549019607843</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -33159,17 +33157,19 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.2.9</string>
 		<string>3.3.2</string>
+		<string>3.2.9</string>
+		<string>3.3.4</string>
+		<string>3.3.3</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1680, 1050}}</string>
+		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{441, 812}</string>
+		<string>{1154, 1073}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -33178,7 +33178,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>AAF1F020-DBA6-431B-A079-830F39516BD0</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>2</integer>
+	<integer>44</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -33949,8 +33949,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-31T00:22:40Z</date>
+	<date>2019-09-22T19:09:02Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
@@ -34833,7 +34835,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.2</string>
+	<string>3.3.4</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
