@@ -16,9 +16,6 @@ bindkey "[C" forward-word
 
 DISABLE_AUTO_TITLE="true"
 
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 if which brew  > /dev/null; then export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH; fi
