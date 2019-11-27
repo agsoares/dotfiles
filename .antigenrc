@@ -7,11 +7,12 @@ antigen bundle brew
 antigen bundle osx
 antigen bundle bundler
 
-# Syntax highlighting bundle.
+# Third party bundles
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions src
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle paulirish/git-open
+antigen bundle agkozak/zsh-z
 antigen bundle MichaelAquilina/zsh-you-should-use
 
 antigen theme eendroroy/alien-minimal alien-minimal
