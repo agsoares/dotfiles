@@ -7,7 +7,7 @@ AM_HIDE_EXIT_CODE=1
 
 # .zshrc Source Basic
 source /usr/local/share/antigen/antigen.zsh
-antigen init ~/.antigenrc
+antigen init ~/.dotfiles/.antigenrc
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
