@@ -1,5 +1,5 @@
 [include]
-	path = ~/.dotfiles/secrets/.gitconfig
+	path = ~/.dotfiles/.gitconfig.local
 [core]
     editor = code --wait
 	excludesfile = ~/.gitignore_global
