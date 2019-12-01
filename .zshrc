@@ -26,6 +26,8 @@ if which pyenv > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"  # This loads nvm
 
+export PATH="$PATH:$HOME/.development/flutter/bin" # Add flutter to path
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 test -e ~/.dotfiles/.aliases && source ~/.dotfiles/.aliases
