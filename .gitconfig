@@ -1,5 +1,3 @@
-[include]
-	path = ~/.dotfiles/.gitconfig.local
 [core]
     editor = code --wait
 	excludesfile = ~/.gitignore_global
@@ -37,3 +35,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[include]
+	path = ~/.dotfiles/.gitconfig.local
