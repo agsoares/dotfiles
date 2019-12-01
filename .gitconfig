@@ -1,7 +1,5 @@
-[user]
-	name = Adriano Soares
-	email = gsoares.adriano@gmail.com
-	username = agsoares
+[include]
+	path = ~/.dotfiles/secrets/.gitconfig
 [core]
     editor = code --wait
 	excludesfile = ~/.gitignore_global
