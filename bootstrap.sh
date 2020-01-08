@@ -8,11 +8,11 @@ symlink_file() {
     ln -s ~/.dotfiles/$FILE ~/$FILE 
 }
 
-if [ "$(uname)" == "Darwin" ]; then
+if [ "$(uname)" = "Darwin" ]; then
     # Install Homebrew
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     # Install Brewfile
-    if which brew  > /dev/null; then brew bundle; fi
+    if which brew > /dev/null; then brew bundle; fi
 fi
 
 symlink_file .zshrc
