@@ -17,6 +17,7 @@ fi
 
 symlink_file .zshrc
 symlink_file .npmrc
+symlink_file .p10k.zsh
 symlink_file .gitconfig
 symlink_file .gitignore_global
 
