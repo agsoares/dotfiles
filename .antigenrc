@@ -15,7 +15,7 @@ antigen bundle paulirish/git-open
 antigen bundle agkozak/zsh-z
 
 # Theme
-antigen theme eendroroy/alien-minimal alien-minimal
+antigen theme romkatv/powerlevel10k
 
 # Tell antigen that you're done.
 antigen apply

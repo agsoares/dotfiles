@@ -46,3 +46,6 @@ test -e ~/.dotfiles/.aliases && source ~/.dotfiles/.aliases # Source aliases
 test -e ~/.dotfiles/.zshrc.local  && source ~/.dotfiles/.zshrc.local # Source local configs
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
