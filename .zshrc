@@ -38,7 +38,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
-test -e ~/.dotfiles/.aliases && source ~/.dotfiles/.aliases # Source aliases
-test -e ~/.dotfiles/.zshrc.local  && source ~/.dotfiles/.zshrc.local # Source local configs
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+test -e ~/.dotfiles/.zshrc.local && source ~/.dotfiles/.zshrc.local # Source local configs
+test -e ~/.dotfiles/.aliases && source ~/.dotfiles/.aliases # Source aliases
