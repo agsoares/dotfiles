@@ -10,7 +10,7 @@ else
     unsetopt BG_NICE
 
     # Change ls colors
-    LS_COLORS="ow=01;36;40" && export LS_COLORS
+    LS_COLORS="ow=01;36" && export LS_COLORS
 
     # Make cd use the ls colors
     zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
