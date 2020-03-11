@@ -28,14 +28,8 @@ DISABLE_AUTO_TITLE="true"
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
-if which brew  > /dev/null; then 
-    export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH
-    
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"  # This loads nvm
-fi
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init - zsh --no-rehash)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
