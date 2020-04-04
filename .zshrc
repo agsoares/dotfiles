@@ -29,7 +29,7 @@ DISABLE_AUTO_TITLE="true"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 which rbenv > /dev/null && eval "$(rbenv init - zsh)"
-which pyenv > /dev/null && eval "$(pyenv init - zsh --no-rehash)" && eval "$(pyenv virtualenv-init -)"
+which pyenv > /dev/null && eval "$(pyenv init - --no-rehash zsh)" && eval "$(pyenv virtualenv-init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
