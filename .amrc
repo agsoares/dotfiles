@@ -9,7 +9,7 @@ export AM_KEEP_PROMPT=0
 export AM_HIDE_EXIT_CODE=1
 
 # ===> VI PROMPT
-export AM_PROMPT_END_TAG=' ❯❯❯'
+export AM_PROMPT_END_TAG='\ ❯❯❯'
 
 # ===> SYMBOLS
 #  export AM_VERSION_PROMPT_SEP='|'
@@ -25,6 +25,9 @@ export AM_PROMPT_END_TAG=' ❯❯❯'
 #  export AM_SVN_SYM='S'
 #  export AM_SSH_SYM='[S]'
 #  export AM_GIT_SYM='G'
+export AM_GIT_ADD_SYM='+'  # Git New Tracked File Symbol
+export AM_GIT_DEL_SYM='-'  # Git Deleted File Symbol
+export AM_GIT_MOD_SYM='*'  # Git Modified File Symbol
 #  export AM_GIT_REBASING_SYMBOL='⇋'
 #  export AM_GIT_PUSH_SYM='↑'
 #  export AM_GIT_PULL_SYM='↓'
