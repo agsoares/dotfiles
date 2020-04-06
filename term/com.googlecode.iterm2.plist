@@ -52865,7 +52865,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1381 895 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1706 0 850 1417 0 0 2560 1417 </string>
+	<string>550 0 1130 1027 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13_selection</key>
@@ -53769,6 +53769,8 @@
 								<real>+infinity</real>
 								<key>minwidth</key>
 								<real>0.0</real>
+								<key>path</key>
+								<string>path</string>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
@@ -53814,13 +53816,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.51372549019607838</real>
+									<real>0.51372551918029785</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.96470588235294119</real>
+									<real>0.96470588445663452</real>
 									<key>Red Component</key>
-									<real>0.31372549019607843</real>
+									<real>0.31372550129890442</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -53905,7 +53907,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>AAF1F020-DBA6-431B-A079-830F39516BD0</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>175</integer>
+	<integer>179</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -54756,7 +54758,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-27T03:10:12Z</date>
+	<date>2020-04-04T02:25:00Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
