@@ -1,0 +1,6 @@
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
+function update-antibody() {
+    antibody bundle < "${DOTFILES}/.antibodyrc" > "${DOTFILES}/.antibodyrc.sh"
+    antibody update  
+}

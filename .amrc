@@ -9,11 +9,7 @@ export AM_KEEP_PROMPT=0
 export AM_HIDE_EXIT_CODE=1
 
 # ===> VI PROMPT
-if [ "$(uname)" = "Darwin" ]; then
-    export AM_PROMPT_END_TAG=' ❯❯❯'
-else
-    export AM_PROMPT_END_TAG='\ ❯❯❯'
-fi
+export AM_PROMPT_END_TAG=' ❯❯❯'
 
 # ===> SYMBOLS
 #  export AM_VERSION_PROMPT_SEP='|'

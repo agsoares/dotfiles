@@ -1,0 +1,14 @@
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+robbyrussell/oh-my-zsh path:plugins/git
+robbyrussell/oh-my-zsh path:plugins/brew
+robbyrussell/oh-my-zsh path:plugins/bundler
+
+# Third party bundles
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-completions path:src
+zsh-users/zsh-autosuggestions
+paulirish/git-open
+agkozak/zsh-z
+
+# Theme
+eendroroy/alien-minimal alien-minimal

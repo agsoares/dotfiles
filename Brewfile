@@ -3,7 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 
 brew 'zsh'
-brew 'antigen'
+brew 'antibody'
 brew 'readline'
 brew 'node'
 brew 'nvm'
@@ -27,10 +27,8 @@ cask 'keepingyouawake'
 
 tap 'caskroom/fonts'
 cask 'font-fira-mono'
-cask 'font-fira-mono-for-powerline'
-cask 'font-firacode-nerd-font'
 cask 'font-fira-code'
-cask 'font-hack'
+cask 'font-victor-mono'
 
 mas 'Affinity Designer', id: 824171161
 mas 'XCode', id: 497799835

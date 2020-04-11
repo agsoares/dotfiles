@@ -1,12 +1,13 @@
 # Bundles configuration
 BUNDLED_COMMANDS=(pod fastlane)
 
+# shortcut to this dotfiles path is $DOTFILES
+export DOTFILES="$HOME/.dotfiles"
+
 # .zshrc Source Basic
-if [ "$(uname)" = "Darwin" ]; then
-    source /usr/local/share/antigen/antigen.zsh
-else
-    source /usr/share/zsh-antigen/antigen.zsh
-    
+source <(antibody init)
+
+if [ "$(uname)" != "Darwin" ]; then
     unsetopt BG_NICE
 
     # Change ls colors
@@ -14,10 +15,15 @@ else
 
     # Make cd use the ls colors
     zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
-    autoload -Uz compinit
-    compinit
 fi
-antigen init ~/.dotfiles/.antigenrc
+
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
+
+antibody bundle < "${DOTFILES}/.antibodyrc"
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
@@ -26,12 +32,14 @@ bindkey "[C" forward-word
 
 DISABLE_AUTO_TITLE="true"
 
-function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+include () { [ -f "$1" ] && source "$1" }
 
 which rbenv > /dev/null && eval "$(rbenv init - zsh)"
 which pyenv > /dev/null && eval "$(pyenv init - --no-rehash zsh)" && eval "$(pyenv virtualenv-init -)"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+include "${HOME}/.iterm2_shell_integration.zsh" 
 
-test -e ~/.dotfiles/.zshrc.local && source ~/.dotfiles/.zshrc.local # Source local configs
-test -e ~/.dotfiles/.aliases && source ~/.dotfiles/.aliases # Source aliases
+include "${DOTFILES}/zsh/.aliases"
+include "${DOTFILES}/zsh/.functions"
+
+include "${DOTFILES}/.zshrc.local"
