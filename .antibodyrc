@@ -1,4 +1,6 @@
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
+
+robbyrussell/oh-my-zsh path:lib/git.zsh
 robbyrussell/oh-my-zsh path:plugins/git
 robbyrussell/oh-my-zsh path:plugins/brew
 robbyrussell/oh-my-zsh path:plugins/bundler
