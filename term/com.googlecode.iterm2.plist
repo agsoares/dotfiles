@@ -52865,7 +52865,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1381 895 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>550 0 1130 1027 0 0 1680 1027 </string>
+	<string>770 0 1786 1417 0 0 2560 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13_selection</key>
@@ -53689,8 +53689,6 @@
 						<dict>
 							<key>knobs</key>
 							<dict>
-								<key>base: compression resistance</key>
-								<integer>1</integer>
 								<key>base: priority</key>
 								<real>5</real>
 								<key>shared text color</key>
@@ -53718,19 +53716,45 @@
 					</dict>
 					<dict>
 						<key>class</key>
+						<string>iTermStatusBarNetworkUtilizationComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.62999999523162842</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.89999997615814209</real>
+									<key>Red Component</key>
+									<real>0.62999999523162842</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
 						<string>iTermStatusBarSpringComponent</string>
 						<key>configuration</key>
 						<dict>
 							<key>knobs</key>
 							<dict>
-								<key>base: compression resistance</key>
-								<integer>1</integer>
-								<key>base: priority</key>
-								<real>5</real>
 								<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
 								<integer>1</integer>
-								<key>iTermStatusBarSpringComponentSpringConstantKey</key>
-								<real>0.01</real>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
@@ -53776,13 +53800,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.98431372549019602</real>
+									<real>1</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.64313725490196083</real>
+									<real>0.68627450980392157</real>
 									<key>Red Component</key>
-									<real>0.0039215686274509803</real>
+									<real>0.015686274509803921</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -53802,27 +53826,27 @@
 							<key>knobs</key>
 							<dict>
 								<key>base: compression resistance</key>
-								<integer>1</integer>
+								<real>1</real>
 								<key>base: priority</key>
-								<real>5</real>
+								<real>1</real>
 								<key>iTermStatusBarGitComponentPollingIntervalKey</key>
 								<real>2</real>
 								<key>maxwidth</key>
-								<real>+infinity</real>
+								<real>0.0</real>
 								<key>minwidth</key>
-								<integer>0</integer>
+								<real>0.0</real>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.51372551918029785</real>
+									<real>0.52941176470588236</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.96470588445663452</real>
+									<real>0.84313725490196079</real>
 									<key>Red Component</key>
-									<real>0.31372550129890442</real>
+									<real>0.37254901960784315</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -53898,7 +53922,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{765, 985}</string>
+		<string>{701, 1121}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -53907,7 +53931,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>AAF1F020-DBA6-431B-A079-830F39516BD0</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>179</integer>
+	<integer>200</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
