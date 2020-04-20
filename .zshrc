@@ -7,15 +7,10 @@ export DOTFILES="$HOME/.dotfiles"
 # .zshrc Source Basic
 source <(antibody init)
 
-if [ "$(uname)" != "Darwin" ]; then
-    unsetopt BG_NICE
+unsetopt BG_NICE
 
-    # Change ls colors
-    LS_COLORS="ow=01;36" && export LS_COLORS
-
-    # Make cd use the ls colors
-    zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
-fi
+# Change ls colors
+LS_COLORS="ow=01;36" && export LS_COLORS
 
 autoload -Uz compinit
 for dump in ~/.zcompdump(N.mh+24); do
@@ -25,6 +20,8 @@ compinit -C
 
 export LESS=-R
 
+# Make cd use the ls colors
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # case insensitive auto completion
 zstyle ':completion:*' menu yes select
 
