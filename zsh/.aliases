@@ -1,4 +1,3 @@
-if which colorls > /dev/null; then alias lc='colorls'; fi
+[ "$(uname)" = "Darwin" ] && alias ls='ls -G' || alias ls='ls --color=auto'
 
-alias ls='ls -G'
 alias simlog='tail -F "$(xcrun simctl getenv booted SIMULATOR_LOG_ROOT)/system.log"'
