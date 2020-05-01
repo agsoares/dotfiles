@@ -1,3 +1,7 @@
+# Locale
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # Bundles configuration
 BUNDLED_COMMANDS=(pod fastlane)
 
