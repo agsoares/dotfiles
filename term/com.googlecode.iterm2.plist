@@ -52865,7 +52865,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1381 895 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 834 1027 0 0 1680 1027 </string>
+	<string>840 0 834 1027 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13_selection</key>
@@ -53873,7 +53873,7 @@
 			<key>Title Components</key>
 			<integer>2</integer>
 			<key>Transparency</key>
-			<real>0.15161802030456853</real>
+			<real>0.070009121192893403</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -53935,7 +53935,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>AAF1F020-DBA6-431B-A079-830F39516BD0</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>215</integer>
+	<integer>218</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
