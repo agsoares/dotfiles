@@ -52865,7 +52865,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1381 895 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1706 7 850 1410 0 0 2560 1417 </string>
+	<string>840 0 834 1027 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_145662ED-8F86-4671-B4AC-56539835FB13_selection</key>
@@ -52931,10 +52931,14 @@
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.68627452850341797</real>
+				<real>0.68235294117647061</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -52989,12 +52993,16 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.81389641761779785</real>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.50178432464599609</real>
+				<real>0.68235294117647061</real>
 				<key>Red Component</key>
-				<real>0.061529088765382767</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -53933,9 +53941,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{698, 960}</string>
+		<string>{77, 705}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -53944,7 +53952,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>AAF1F020-DBA6-431B-A079-830F39516BD0</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>222</integer>
+	<integer>231</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>

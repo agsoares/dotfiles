@@ -2,6 +2,7 @@
 *.zwc
 secrets
 **/*.local
+.vscode
 
 # Created by https://www.gitignore.io/api/osx
 

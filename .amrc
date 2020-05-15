@@ -8,9 +8,6 @@ export AM_INITIAL_LINE_FEED=1
 export AM_KEEP_PROMPT=0
 export AM_HIDE_EXIT_CODE=1
 
-# ===> VI PROMPT
-export AM_PROMPT_END_TAG=' ❯❯❯'
-
 # ===> SYMBOLS
 #  export AM_VERSION_PROMPT_SEP='|'
 #  export AM_JAVA_SYM='JAVA:'
@@ -34,18 +31,18 @@ export AM_GIT_MOD_SYM='*'  # Git Modified File Symbol
 #  export AM_GIT_STASH_SYM='@'
 #  export AM_GIT_BARE_SYM='☢'
 #  export AM_PROMPT_START_TAG=''
-#  export AM_PROMPT_END_TAG=''
+export AM_PROMPT_END_TAG=' ❯❯❯'
 
 ## ===> COLORS
 #  export AM_VCS_COLOR=248
 #  export AM_SSH_COLOR=143
-#  export AM_NORMAL_COLOR=39
-#  export AM_ERROR_COLOR=208
+export AM_NORMAL_COLOR=blue
+export AM_ERROR_COLOR=red
 #  export AM_REV_COLOR=248
-#  export AM_BRANCH_COLOR=78
-#  export AM_LEFT_RIGHT_COLOR=222
-#  export AM_STASH_COLOR=222
-#  export AM_BARE_COLOR=222
+export AM_BRANCH_COLOR=green
+export AM_LEFT_RIGHT_COLOR=yellow
+export AM_STASH_COLOR=yellow
+export AM_BARE_COLOR=yellow
 #  export AM_COMMIT_SINCE_COLOR=244
 #  export AM_FADE_COLOR=242
 #  export AM_VENV_COLOR=245
@@ -61,6 +58,6 @@ export AM_GIT_MOD_SYM='*'  # Git Modified File Symbol
 #  export AM_VIINS_COLOR=39
 #  export AM_VICMD_COLOR=208
 #  export AM_PROMPT_START_TAG_COLOR=39
-export AM_PROMPT_END_TAG_COLOR=78
+export AM_PROMPT_END_TAG_COLOR=green
 #  export AM_GIT_TRACKED_COLOR=78
 #  export AM_GIT_UN_TRACKED_COLOR=208

@@ -1,12 +1,14 @@
-function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+# gitignore.io
+function gi() { 
+    curl -L -s https://www.gitignore.io/api/$@ ;
+}
 
-function update-antibody() {
-    antibody bundle < "${DOTFILES}/.antibodyrc" > "${DOTFILES}/.antibodyrc.sh"
-    antibody update  
+# Display ip
+function ips() {
+    ifconfig | grep "inet " | awk '{print $2}'
 }
 
 # Lazy init NVM
-
 declare -a NODE_GLOBALS=(`find ~/.nvm/versions/node -maxdepth 3 -type l -wholename '*/bin/*' 2>/dev/null | xargs -n1 basename | sort | uniq`)
 
 NODE_GLOBALS+=("node")
