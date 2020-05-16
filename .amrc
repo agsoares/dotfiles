@@ -8,6 +8,12 @@ export AM_INITIAL_LINE_FEED=1
 export AM_KEEP_PROMPT=0
 export AM_HIDE_EXIT_CODE=1
 
+# ===> VI PROMPT
+export AM_ENABLE_VI_PROMPT=0
+export AM_VIM_INSERT_SYM='[I]'
+export AM_VIM_NORMAL_SYM='[N]'
+export AM_VI_PROMPT_POS='right_end'
+
 # ===> SYMBOLS
 #  export AM_VERSION_PROMPT_SEP='|'
 #  export AM_JAVA_SYM='JAVA:'
