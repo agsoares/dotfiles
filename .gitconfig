@@ -3,6 +3,8 @@
 	excludesfile = ~/.gitignore_global
 [merge]
 	tool = vscode
+[pull]
+	rebase = false
 [mergetool "vscode"]
 	cmd = code --wait $
 [gitflow "prefix"]
