@@ -8,6 +8,11 @@ function ips() {
     ifconfig | grep "inet " | awk '{print $2}'
 }
 
+# Create directory and open
+function take() {
+  mkdir -p $@ && cd ${@:$#}
+}
+
 # Lazy init NVM
 declare -a NODE_GLOBALS=(`find ~/.nvm/versions/node -maxdepth 3 -type l -wholename '*/bin/*' 2>/dev/null | xargs -n1 basename | sort | uniq`)
 
