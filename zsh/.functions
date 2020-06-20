@@ -13,18 +13,22 @@ function take() {
   mkdir -p $@ && cd ${@:$#}
 }
 
-# Lazy init NVM
-declare -a NODE_GLOBALS=(`find ~/.nvm/versions/node -maxdepth 3 -type l -wholename '*/bin/*' 2>/dev/null | xargs -n1 basename | sort | uniq`)
+if command -v foo >/dev/null 2>&1; then
 
-NODE_GLOBALS+=("node")
-NODE_GLOBALS+=("nvm")
-
-load_nvm () {
     export NVM_DIR=~/.nvm
-    [ -s "$(brew --prefix nvm)/nvm.sh" ] && . "$(brew --prefix nvm)/nvm.sh"  # This loads nvm
-    [ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && . "$(brew --prefix nvm)/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-}
+    
+    # Lazy init NVM
+    declare -a NODE_GLOBALS=(`find ~/.nvm/versions/node -maxdepth 3 -type l -wholename '*/bin/*' 2>/dev/null | xargs -n1 basename | sort | uniq`)
 
-for cmd in "${NODE_GLOBALS[@]}"; do
-    eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
-done
+    NODE_GLOBALS+=("node")
+    NODE_GLOBALS+=("nvm")
+
+    load_nvm () {
+        [ -s "$(brew --prefix nvm)/nvm.sh" ] && . "$(brew --prefix nvm)/nvm.sh"  # This loads nvm
+        [ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && . "$(brew --prefix nvm)/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+    }
+
+    for cmd in "${NODE_GLOBALS[@]}"; do
+        eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
+    done
+fi

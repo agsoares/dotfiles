@@ -38,7 +38,7 @@ bindkey "[C" forward-word
 
 DISABLE_AUTO_TITLE="true"
 
-include () { [ -f "$1" ] && source "$1" }
+include () { [ -f "$1" ] && source "$1" || true }
 
 which rbenv > /dev/null && eval "$(rbenv init - zsh)"
 which pyenv > /dev/null && eval "$(pyenv init - --no-rehash zsh)" && eval "$(pyenv virtualenv-init -)"
