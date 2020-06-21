@@ -1,18 +1,18 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'itchyny/lightline.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
-Plug 'connorholyday/vim-snazzy'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
 filetype plugin indent on
 
-let g:SnazzyTransparent = 1
-colorscheme snazzy
+let g:dracula_colorterm = 0
+colorscheme dracula
 
 let g:lightline = {
-\ 'colorscheme': 'snazzy',
+\ 'colorscheme': 'dracula',
 \ }
 
 syntax enable           " enable syntax processing
