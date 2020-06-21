@@ -1,4 +1,11 @@
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'itchyny/lightline.vim'
+
+Plug 'connorholyday/vim-snazzy'
+
+call plug#end()
+
 filetype plugin indent on
 
 let g:SnazzyTransparent = 1

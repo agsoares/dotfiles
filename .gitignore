@@ -1,5 +1,7 @@
 .vim/plugins
+.vim/plugged
 *.zwc
+*.swp
 secrets
 **/*.local
 .vscode
