@@ -13,6 +13,10 @@ source <(antibody init)
 
 unsetopt BG_NICE
 
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+
 # Change ls colors
 LS_COLORS="ow=01;36" && export LS_COLORS
 
