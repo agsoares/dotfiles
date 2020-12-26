@@ -13,6 +13,7 @@ source <(antibody init)
 
 unsetopt BG_NICE
 
+HISTFILE="${HOME}/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
 setopt SHARE_HISTORY
@@ -33,16 +34,20 @@ zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # case insensitive auto completion
 zstyle ':completion:*' menu yes select
 
-antibody bundle < "${DOTFILES}/.antibodyrc"
+antibody bundle < "${DO TFILES}/.antibodyrc"
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 
+DEBIAN_PREVENT_KEYBOARD_CHANGES=yes
 DISABLE_AUTO_TITLE="true"
 
 include () { [ -f "$1" ] && source "$1" || true }
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export PATH="$HOME/.pyenv/bin:$PATH"
 
 which rbenv > /dev/null && eval "$(rbenv init - zsh)"
 which pyenv > /dev/null && eval "$(pyenv init - --no-rehash zsh)" && eval "$(pyenv virtualenv-init -)"
