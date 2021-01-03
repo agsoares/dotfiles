@@ -34,7 +34,7 @@ zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # case insensitive auto completion
 zstyle ':completion:*' menu yes select
 
-antibody bundle < "${DO TFILES}/.antibodyrc"
+antibody bundle < "${DOTFILES}/.antibodyrc"
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
