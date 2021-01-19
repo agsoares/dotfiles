@@ -10,7 +10,6 @@ brew 'pyenv-virtualenv'
 brew 'rbenv'
 brew 'tldr'
 brew 'mas'
-brew 'carthage'
 
 tap 'caskroom/cask'
 cask 'visual-studio-code'
@@ -26,7 +25,7 @@ tap 'caskroom/fonts'
 cask 'font-fira-mono'
 cask 'font-fira-code'
 cask 'font-victor-mono'
+cask 'font-fira-code'
+cask 'font-victor-mono'
 
-mas 'Affinity Designer', id: 824171161
-mas 'XCode', id: 497799835
 mas 'Magnet', id: 441258766

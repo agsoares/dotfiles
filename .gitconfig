@@ -1,6 +1,6 @@
 [core]
     editor = code --wait
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.dotfiles/.gitignore_global
 [merge]
 	tool = vscode
 [pull]

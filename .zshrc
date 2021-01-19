@@ -50,9 +50,7 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PATH="$HOME/.pyenv/bin:$PATH"
 
 which rbenv > /dev/null && eval "$(rbenv init - zsh)"
-which pyenv > /dev/null && eval "$(pyenv init - --no-rehash zsh)" && eval "$(pyenv virtualenv-init -)"
-
-include "${HOME}/.iterm2_shell_integration.zsh" 
+which pyenv > /dev/null && eval "$(pyenv init - zsh)" && eval "$(pyenv virtualenv-init -)"
 
 include "${DOTFILES}/zsh/.aliases"
 include "${DOTFILES}/zsh/.functions"
