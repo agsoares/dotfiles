@@ -9,7 +9,7 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'rbenv'
 brew 'tldr'
-brew 'mas'
+brew 'coreutils'
 
 tap 'caskroom/cask'
 cask 'visual-studio-code'
@@ -25,7 +25,4 @@ tap 'caskroom/fonts'
 cask 'font-fira-mono'
 cask 'font-fira-code'
 cask 'font-victor-mono'
-cask 'font-fira-code'
-cask 'font-victor-mono'
-
-mas 'Magnet', id: 441258766
+cask 'font-cascadia-code'
