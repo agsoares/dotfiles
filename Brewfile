@@ -10,6 +10,8 @@ brew 'pyenv-virtualenv'
 brew 'rbenv'
 brew 'tldr'
 brew 'coreutils'
+brew 'robotsandpencils/made/xcodes'
+brew 'aria2'
 
 tap 'caskroom/cask'
 cask 'visual-studio-code'

@@ -1,9 +1,0 @@
-[submodule ".vim/bundle/lightline.vim"]
-	path = .vim/bundle/lightline.vim
-	url = https://github.com/itchyny/lightline.vim
-[submodule ".vim/bundle/snazzy.vim"]
-	path = .vim/bundle/snazzy.vim
-	url = https://github.com/connorholyday/vim-snazzy.git
-[submodule ".vim/bundle/swift.vim"]
-	path = .vim/bundle/swift.vim
-	url = https://github.com/keith/swift.vim.git
