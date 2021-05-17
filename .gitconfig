@@ -32,6 +32,8 @@
     added = yellow
     changed = green
     untracked = red
+[alias]
+  recent = branch --sort=-committerdate
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
