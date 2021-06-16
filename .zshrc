@@ -47,10 +47,11 @@ DISABLE_AUTO_TITLE="true"
 include () { [ -f "$1" ] && source "$1" || true }
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
 which rbenv > /dev/null && eval "$(rbenv init - zsh)"
-which pyenv > /dev/null && eval "$(pyenv init - zsh)" && eval "$(pyenv virtualenv-init -)"
+which pyenv > /dev/null && eval "$(pyenv init --path)" && eval "$(pyenv virtualenv-init -)"
 
 include "${DOTFILES}/zsh/.aliases"
 include "${DOTFILES}/zsh/.functions"
