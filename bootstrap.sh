@@ -21,6 +21,7 @@ if [ "$(uname)" = "Darwin" ]; then
     brew bundle
 fi
 
+symlink_file .vim
 symlink_file .zshrc
 symlink_file .amrc
 symlink_file .npmrc
