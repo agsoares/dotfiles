@@ -9,21 +9,20 @@ symlink_file() {
 }
 
 if [ "$(uname)" = "Darwin" ]; then
-    # Install Homebrew
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    # Install Brewfile
-    if which brew > /dev/null; then brew bundle; fi
+    if [[ $(command -v brew) == "" ]]; then
+        echo "Installing Hombrew"
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    else
+        echo "Updating Homebrew"
+        brew update
+    fi
+
+    echo "Install Brewfile"
+    brew bundle
 fi
 
 symlink_file .zshrc
+symlink_file .amrc
 symlink_file .npmrc
 symlink_file .gitconfig
 symlink_file .gitignore_global
-
-ZSH=$(which zsh)
-if ! grep -q $ZSH /etc/shells; then
-  #Add zsh to your shells
-  sudo echo $ZSH >> /etc/shells
-fi
-#Make zsh the default shell
-chsh -s $ZSH
