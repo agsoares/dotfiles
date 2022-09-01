@@ -1,3 +1,5 @@
+[init]
+	defaultBranch = main
 [core]
     editor = code --wait
 	excludesfile = ~/.dotfiles/.gitignore_global
