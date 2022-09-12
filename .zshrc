@@ -51,7 +51,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 which rbenv > /dev/null && eval "$(rbenv init - zsh)"
-which pyenv > /dev/null && eval "$(pyenv init --path)" && eval "$(pyenv virtualenv-init -)"
+which pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"
 
 include "${DOTFILES}/zsh/.aliases"
 include "${DOTFILES}/zsh/.functions"
