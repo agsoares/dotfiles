@@ -4,3 +4,5 @@ alias ips="ifconfig | grep 'inet ' | awk '{print \$2}'"
 alias simlog='tail -F "$(xcrun simctl getenv booted SIMULATOR_LOG_ROOT)/system.log"'
 
 alias kill-displaylink='sudo killall DisplayLinkUserAgent'
+
+alias ls="eza"

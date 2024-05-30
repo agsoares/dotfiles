@@ -1,9 +1,15 @@
+
+if [[ -f "/opt/homebrew/bin/brew" ]] then
+  # If you're using macOS, you'll want this enabled
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # Locale
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Bundles configuration
-BUNDLED_COMMANDS=(pod fastlane)
+# BUNDLED_COMMANDS=(pod fastlane)
 
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES="$HOME/.dotfiles"
@@ -19,7 +25,7 @@ SAVEHIST=10000
 setopt SHARE_HISTORY
 
 # Change ls colors
-LS_COLORS="ow=01;36" && export LS_COLORS
+# LS_COLORS="ow=01;36" && export LS_COLORS
 
 autoload -Uz compinit
 for dump in ~/.zcompdump(N.mh+24); do
@@ -53,7 +59,14 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 which rbenv > /dev/null && eval "$(rbenv init - zsh)"
 which pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"
 
+include "${DOTFILES}/zsh/.fzf"
+
 include "${DOTFILES}/zsh/.aliases"
 include "${DOTFILES}/zsh/.functions"
 
 include "${DOTFILES}/.zshrc.local"
+
+which zoxide > /dev/null && eval "$(zoxide init zsh)"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

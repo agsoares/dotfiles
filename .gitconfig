@@ -1,8 +1,15 @@
 [init]
 	defaultBranch = main
 [core]
+    pager = delta
     editor = code --wait
 	excludesfile = ~/.dotfiles/.gitignore_global
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true    # use n and N to move between diff sections
+[diff]
+    colorMoved = default
 [merge]
 	tool = vscode
 [pull]
@@ -36,10 +43,10 @@
     untracked = red
 [alias]
   recent = branch --sort=-committerdate
+[include]
+	path = ~/.dotfiles/.gitconfig.local
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[include]
-	path = ~/.dotfiles/.gitconfig.local
