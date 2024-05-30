@@ -1,11 +1,33 @@
-# Ignore everything
-*
+# Comments and blank lines are allowed.
 
-# But not these files...
-!.vim/**
-!.config/**
-!.zshrc
-!.p10k.zsh
-!.npmrc
-!.gitconfig
-!.gitignore_global
+RCS
+.+,v
+
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+\.DS_Store
+
+\.antibodyrc
+Brewfile.*
+bootstrap\.sh
+.*\.local
+bin
+term
+zsh
