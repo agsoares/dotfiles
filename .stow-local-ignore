@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files...
+!.vim/**
+!.config/**
+!.zshrc
+!.p10k.zsh
+!.npmrc
+!.gitconfig
+!.gitignore_global
