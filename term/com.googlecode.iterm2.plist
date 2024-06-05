@@ -55008,6 +55008,7 @@
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Paste History</string>
+		<string>Actions</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
