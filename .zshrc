@@ -68,4 +68,6 @@ include "${DOTFILES}/zsh/.functions"
 
 include "${DOTFILES}/.zshrc.local"
 
+include "${DOTFILES}/.p10k.zsh"
+
 which zoxide > /dev/null && eval "$(zoxide init zsh)"
