@@ -14,8 +14,10 @@ export LC_ALL=en_US.UTF-8
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES="$HOME/.dotfiles"
 
+source $HOME/.antidote/antidote.zsh
+
 # .zshrc Source Basic
-source <(antibody init)
+source <(antidote init)
 
 unsetopt BG_NICE
 
@@ -42,7 +44,7 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --tree --color=always --icons=never $realpath | head -200'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --tree --color=always --icons=never $realpath | head -200'
 
-antibody bundle < "${DOTFILES}/.antibodyrc"
+antidote bundle < "${DOTFILES}/.antibodyrc"
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward

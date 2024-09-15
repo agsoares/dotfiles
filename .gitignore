@@ -6,6 +6,8 @@ secrets
 **/*.local
 .vscode
 
+.config/raycast
+
 # Created by https://www.gitignore.io/api/osx
 
 ### OSX ###
@@ -35,6 +37,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
 
 # End of https://www.gitignore.io/api/osx

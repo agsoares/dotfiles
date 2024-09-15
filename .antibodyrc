@@ -7,7 +7,7 @@ robbyrussell/oh-my-zsh path:plugins/bundler
 
 # Third party bundles
 zsh-users/zsh-syntax-highlighting
-zsh-users/zsh-completions path:src
+zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
 paulirish/git-open
 
